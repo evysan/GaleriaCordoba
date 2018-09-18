@@ -36,6 +36,11 @@ function enviar() {
 
     var valorTotal = precio + (precio*0.19);
 
+    if (nombres.length == 0 || apellidos.length == 0 || identificacion.length == 0 || edad.length == 0 || telefono.length == 0 || email.length == 0 || destino.length == 0) {
+        alert ("Los campos deben ser llenados");
+        return;
+    }
+
     var objeto = {
         nombreCompleto: `${nombres} ${apellidos}`,
         identificacion,
@@ -46,6 +51,7 @@ function enviar() {
         precio,
         valorTotal
     };
+
 
     guardarReserva(objeto);
     window.location.href = "confirmacionreser.html";
