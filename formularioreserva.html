@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva</title>
+</head>
+<body>
+        <nav class="navegacion">
+                <div>
+                    <img class="logonav" src="recursos/nav.jpg" alt="">
+                </div>
+                <div>
+                    <span class="titulonav">GALERIA TURISTICA</span>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href="index.html">Home</a>
+                        <a href="fotos.html">Fotos</a>
+                        <a href="gastronomia.html">Gastronomia</a>
+                        <a href="festividades.html">Festividades</a>
+                    </ul>
+                </div>
+            </nav>
+    
+    <div class="formulario">
+            <h1 class="formulario_titulo">RESERVA TU VISITA</h1>
+            <input id="nombres" type="text" class="formulario_input">
+            <label for="nombres" class="formulario_label">Nombres</label>
+            <input id="apellidos" type="text" class="formulario_input">
+            <label for="apellidos" class="formulario_label">Apellidos</label>
+            <input id="identificacion" type="number" class="formulario_input">
+            <label for="identificacion" class="formulario_label">Identificacion</label>
+            <input id="edad" type="number" class="formulario_input">
+            <label for="edad" class="formulario_label">Edad</label>
+            <input id="telefono" type="number" class="formulario_input">
+            <label for="telefono" class="formulario_label">Telefono</label>
+
+            <label for="seleccion_sexo" class="label_titulo">Sexo</label>
+            <select name="Sexo" id="seleccion_sexo" class="formulario_input">
+                    <option value="Mas">Masculino</option>
+                    <option value="Fem">Femenino</option>
+            </select> <br>
+
+            <input id="email" type="email" class="formulario_input">
+            <label for="email" class="formulario_label">E-Mail</label>
+            <input id="fechanacimiento" type="date" class="formulario_input">
+            <label for="fechanacimiento" class="formulario_label3">Fecha de Nacimiento</label>
+
+            <div id="destino" class="formulario_input">
+                <input type="radio" name="destino" value="San Bernardo del Viento"> San Bernardo del Viento <br>
+                <input type="radio" name="destino" value="San Antero"> San Antero <br>
+                <input type="radio" name="destino" value="Moñitos"> Moñitos<br>
+                <input type="radio" name="destino" value="Puerto Escondico"> Puerto Escondido<br>
+                <input type="radio" name="destino" value="Sampues"> Sampues<br>
+                <input type="radio" name="destino" value="Monteria"> Monteria<br>
+            </div> 
+            <div class="formulario_label2">Destino</div>
+
+            <input type="text" class="formulario_input">
+            <label for="" class="formulario_label">Preguntas</label>
+
+            <label for="" class="label_titulo">TERMINOS Y CONDICIONES</label>
+            <p class="terminos">
+                    OBTENER EL CONSENTIMIENTO DEL SOLICITANTE <br>
+                    Es primordial que el usuario acepte los terminos y condiciones 
+                    para poder hacer uso de la informaciòn
+            </p>
+            
+            <div class="validar">
+                <input type="checkbox" name="Aceptar" value="acept" > ACEPTO 
+            </div>
+
+            <button type="button" value="Enviar" class="formulario_submit" onclick="enviar()"> Enviar </button>
+            
+    </div>
+    <script src="formulario.js">
+    
+    </script>
+</body>
+</html>
